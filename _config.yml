@@ -1,13 +1,12 @@
-# _config.yml
-
 title: Harsha Sai Jagu
 description: Data Scientist | Python, PySpark, ML, Big Data
-baseurl: "" # leave empty for username.github.io
+baseurl: "" # leave empty
 url: "https://harshasaijagu.github.io"
 
-theme: minimal-mistakes-jekyll
+# Use remote theme instead of theme:
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
-# Navigation links
+# Navigation
 nav:
   - title: Home
     url: /
