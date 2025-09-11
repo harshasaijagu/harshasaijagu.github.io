@@ -1026,10 +1026,10 @@ showTestimonial(0);
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
       <!-- Contact Form -->
-      <form class="flex flex-col gap-4" method="POST">
-        <input type="text" name="name" placeholder="Name" class="p-2 border rounded-md" required>
-        <input type="email" name="email" placeholder="Email" class="p-2 border rounded-md" required>
-        <textarea name="message" rows="6" placeholder="Message" class="p-2 border rounded-md" required></textarea>
+      <form id="contact-form" class="flex flex-col gap-4" method="POST" action="https://formspree.io/f/xgvlqeyy">
+        <input type="text" name="name" placeholder="Name" class="p-2 border rounded-md focus:outline-none focus:border-black" required>
+        <input type="email" name="email" placeholder="Email" class="p-2 border rounded-md focus:outline-none focus:border-black" required>
+        <textarea name="message" rows="6" placeholder="Message" class="p-2 border rounded-md focus:outline-none focus:border-black" required></textarea>
         <button type="submit" class="px-4 py-2 border-2 border-orange-600 rounded-full hover:bg-orange-600 hover:text-white transition">
           Send Message
         </button>
@@ -1083,8 +1083,6 @@ showTestimonial(0);
     </div>
   </div>
 </section>
-
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
