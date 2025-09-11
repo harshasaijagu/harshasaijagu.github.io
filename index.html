@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Sai Jagu | Data Scientist Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS for responsive layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-lCgQp6czzRzKknF2b5cdk6XUf1XfIu0V4ql5S6Ew4tRHiE9XYrVk2b9+zQoZz/otS0tN8t4o0q+4Wv6ox0x9Zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Border Glow -->
+    <style>
+        @keyframes glow {
+            0% {
+                border-color: #e5e7eb; /* gray-200 */
+            }
+            50% {
+                border-color: #f97316; /* orange-500 */
+            }
+            100% {
+                border-color: #e5e7eb; /* gray-200 */
+            }
+        }
+
+        .border-glow {
+            animation: glow 2.5s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-neutral-100 text-white">
+
+<!-- HEADER / NAVIGATION -->
+<header class="fixed top-0 w-full bg-neutral-900/70 p-4 backdrop-blur z-50">
+    <nav class="flex justify-center gap-x-6 md:gap-x-8" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="font-bold hover:text-orange-500 transition">About</a>
+        <a href="#resume" class="font-bold hover:text-orange-500 transition">Resume</a>
+        <a href="#portfolio" class="font-bold hover:text-orange-500 transition">Portfolio</a>
+        <a href="#testimonials" class="font-bold hover:text-orange-500 transition">Testimonials</a>
+        <a href="#contact" class="font-bold hover:text-orange-500 transition">Contact</a>
+    </nav>
+</header>
+
+
+<!-- ABOUT ME -->
+<section id="hero" class="relative flex min-h-screen items-center justify-start p-4" style="background: linear-gradient(180deg, #F9FAFB 20%, #4d84fa5f 40%);">
+    <div class="max-w-screen-lg mx-auto w-full flex flex-col md:flex-row items-center gap-12 text-neutral-900 py-24 md:py-0">
+        <div class="flex-shrink-0">
+            <img src="images/avataaars.png" alt="Harsha Sai Jagu" class="w-60 md:w-80" loading="lazy">
+        </div>
+
+        <div class="flex-1 text-left">
+            <h3 class="text-lg font-normal text-gray-700">Hi, I am</h3>
+            <h1 class="text-4xl sm:text-5xl font-bold mt-1 text-orange-500">Harsha Sai Jagu</h1>
+            <p class="text-lg sm:text-xl font-medium mt-2 text-neutral-800">Contemplative coder & Data Scientist</p>
+            
+            <p class="mt-6 max-w-xl text-neutral-700">I am a data professional specializing in leveraging Python, PySpark, and Machine Learning to drive tangible business growth and solve real-world challenges. My work focuses on building end-to-end data and AI solutions, from data ingestion to model deployment, and transforming complex data into clear, actionable insights.</p>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 text-neutral-800">
+                <li class="flex items-center gap-2">📍 <span>Tampa, FL</span></li>
+                <li class="flex items-center gap-2">🎂 <span>25</span></li>
+                <li class="flex items-center gap-2">🌐 <span>Indian</span></li>
+                <li class="flex items-center gap-2">🎯 <span>Cricket, Badminton, Chess</span></li>
+                <li class="flex items-center gap-2">🎓 <span>University of South Florida</span></li>
+                <li class="flex items-center gap-2">📜 <span>Masters in AI & Business Analytics</span></li>
+            </ul>
+
+            <div class="mt-6 flex justify-start gap-6 flex-wrap">
+                <a href="#contact" 
+                    class="px-6 py-2 border-2 border-orange-500 text-orange-500 rounded-full font-medium hover:bg-orange-500 hover:text-white transition">
+                    Get in Touch
+                </a>
+
+                <a href="resume.pdf" 
+                    class="px-6 py-2 border-2 border-black rounded-full font-medium hover:bg-black hover:text-white transition">
+                    Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="bg-neutral-900 px-4 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto">
+        <div class="mb-10 text-center relative">
+            <h2 class="text-3xl font-bold text-white mb-2 inline-block relative">
+                Areas of Interest
+                <span class="absolute left-1/2 -bottom-2 -translate-x-1/2 w-16 h-1 bg-orange-500 rounded-full"></span>
+            </h2>
+        </div>
+
+        <div class="text-white flex flex-col items-center">
+            <p class="mb-6 text-center max-w-2xl">Here are the domains and challenges that inspire my curiosity and drive my work.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full text-left mt-6">
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-brain"></i> Machine Learning & AI
+                    </h3>
+                    <p class="text-white">Designing predictive models, deep learning, and recommendation systems.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-cloud"></i> Big Data & Cloud
+                    </h3>
+                    <p class="text-white">Building scalable pipelines with PySpark, Databricks, and Azure for enterprise-scale solutions.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-comments"></i> Natural Language Processing (NLP)
+                    </h3>
+                    <p class="text-white">Extracting meaning from text using RAG, transformers, and statistical models.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-chart-line"></i> Business Analytics
+                    </h3>
+                    <p class="text-white">Bridging data science with business value through KPI frameworks, A/B testing, and storytelling.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-chart-pie"></i> Visualization & Communication
+                    </h3>
+                    <p class="text-white">Crafting dashboards and insights using Power BI, Tableau, and Python viz libraries.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2 text-orange-500 flex items-center">
+                        <i class="fas fa-lightbulb"></i> Applied Research & Innovation
+                    </h3>
+                    <p class="text-white">Exploring emerging technologies and applying them to real-world business use cases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- RESUME / EDUCATION & WORK -->
+<section id="resume" class="bg-neutral-100 px-4 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto">
+        <h2 class="text-3xl font-bold mb-2 text-center text-gray-900">My Journey</h2>
+        <div class="h-1 w-24 mx-auto bg-orange-500 mb-12 rounded"></div>
+
+        <div class="relative">
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-400 hidden md:block"></div>
+
+            <div class="space-y-12 md:space-y-0">
+
+                <div class="flex items-center md:justify-start relative mb-12">
+                    <div class="md:w-5/12 pr-8 md:pr-0 md:text-right md:pl-0 w-full">
+                        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-orange-500 cursor-pointer transform hover:-translate-y-1 timeline-item" onclick="openModal('edu1')">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-28 h-28 flex items-center justify-center p-2">
+                                    <img src="icons/IITI.png" alt="IIT Indore" class="max-h-24 max-w-24 object-contain">
+                                </div>
+                                <div class="p-4 flex-grow text-left">
+                                    <p class="font-bold">B.Tech, Mechanical Engineering</p>
+                                    <p class="italic">Indian Institute of Technology (IITI)</p>
+                                    <p class="italic">Indore</p>
+                                    <p>2017 - 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-orange-500 z-10 hidden md:block"></div>
+                </div>
+
+                <div class="flex items-center md:justify-end relative mb-12">
+                    <div class="md:w-5/12 pl-8 md:pl-0 md:text-left md:pr-0 w-full">
+                        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-orange-500 cursor-pointer transform hover:-translate-y-1 timeline-item" onclick="openModal('work1')">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-28 h-28 flex items-center justify-center p-2">
+                                    <img src="icons/fractal.png" alt="Fractal Analytics" class="max-h-24 max-w-24 object-contain">
+                                </div>
+                                <div class="p-4 flex-grow text-left">
+                                    <p class="font-bold">Data Scientist</p>
+                                    <p class="italic">Fractal Analytics</p>
+                                    <p class="italic">Bangalore</p>
+                                    <p>2021 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-orange-500 z-10 hidden md:block"></div>
+                </div>
+
+                <div class="flex items-center md:justify-start relative mb-12">
+                    <div class="md:w-5/12 pr-8 md:pr-0 md:text-right md:pl-0 w-full">
+                        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-orange-500 cursor-pointer transform hover:-translate-y-1 timeline-item" onclick="openModal('edu2')">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-28 h-28 flex items-center justify-center p-2">
+                                    <img src="icons/USF.png" alt="USF" class="max-h-24 max-w-24 object-contain">
+                                </div>
+                                <div class="p-4 flex-grow text-left">
+                                    <p class="font-bold">M.S, AI & Business Analytics</p>
+                                    <p class="italic">University of South Florida</p>
+                                    <p class="italic">Tampa, Florida</p>
+                                    <p>2023 - 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-orange-500 z-10 hidden md:block"></div>
+                </div>
+
+                <div class="flex items-center md:justify-end relative mb-12">
+                    <div class="md:w-5/12 pl-8 md:pl-0 md:text-left md:pr-0 w-full">
+                        <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden border-2 border-transparent transition-all duration-300 hover:border-orange-500 cursor-pointer transform hover:-translate-y-1 timeline-item" onclick="openModal('work2')">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 w-28 h-28 flex items-center justify-center p-2">
+                                    <img src="icons/USF.png" alt="Graduate Assistant" class="max-h-24 max-w-24 object-contain">
+                                </div>
+                                <div class="p-4 flex-grow text-left">
+                                    <p class="font-bold">Graduate Assistant</p>
+                                    <p class="italic">Muma College of Business</p>
+                                    <p class="italic">Tampa, Florida</p>
+                                    <p>2024 - 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-orange-500 z-10 hidden md:block"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="edu1" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
+    <div class="bg-gray-900 text-white p-8 rounded-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh]">
+        <button onclick="closeModal('edu1')" class="absolute top-4 right-4 text-orange-500 font-bold text-2xl">X</button>
+        <h2 class="text-3xl font-bold mb-4">B.Tech in Mechanical Engineering</h2>
+        <p class="italic mb-4">IIT Indore • 2017 - 2021</p>
+        <p class="mb-4">
+            <span class="font-bold text-orange-500">Overview:</span>
+            Pursued a B.Tech in Mechanical Engineering at IIT Indore, focusing on building strong analytical, problem-solving, and computational skills. Developed interest in data analysis, algorithms, and machine learning, laying the foundation for a transition to AI & Business Analytics.
+        </p>
+        <p class="mb-2"><span class="font-bold text-orange-500">Key Courses & Projects:</span></p>
+        <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Data Structures and Algorithms</li>
+            <li>Computer-Aided Design (CAD) and Simulations</li>
+            <li>Thermodynamics & Fluid Mechanics Projects</li>
+            <li>Mini-Project: Predictive Maintenance of Rotating Machinery Using Sensor Data</li>
+        </ul>
+        <p class="mb-2"><span class="font-bold text-orange-500">Achievements:</span></p>
+        <ul class="list-disc list-inside space-y-1">
+            <li>GPA: 8.18 / 10</li>
+            <li>Led coding and robotics workshops for peers</li>
+            <li>Actively participated in tech fest hackathons and won accolades for problem-solving challenges</li>
+        </ul>
+    </div>
+</div>
+
+<div id="edu2" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
+    <div class="bg-gray-900 text-white p-8 rounded-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh]">
+        <button onclick="closeModal('edu2')" class="absolute top-4 right-4 text-orange-500 font-bold text-2xl">X</button>
+        <h2 class="text-3xl font-bold mb-4">M.S. in AI & Business Analytics</h2>
+        <p class="italic mb-4">University of South Florida • 2023 - 2025</p>
+        <p class="mb-4">
+            <span class="font-bold text-orange-500">Overview:</span>
+            Pursued an advanced master’s program combining AI, machine learning, and business analytics. Focused on predictive modeling, big data processing, and deploying analytics solutions in cloud environments.
+        </p>
+        <p class="mb-2"><span class="font-bold text-orange-500">Tech Stack:</span></p>
+        <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Python, PySpark, SQL, R, Azure, MLflow, XGBoost, BERT, LangChain, FAISS, Docker, Power BI, Tableau</li>
+        </ul>
+        <p class="mb-2"><span class="font-bold text-orange-500">Key Projects / Contributions:</span></p>
+        <ul class="list-disc list-inside space-y-1">
+            <li>RAG-Driven News Q&A Chatbot: GPT-4, LangChain, FAISS, Docker for news retrieval & interactive Q&A</li>
+            <li>Predictive Modeling Pipelines: Built end-to-end ML pipelines on Azure Databricks for 2M+ records</li>
+            <li>Next Coding Challenge Recommender: Hybrid recommendation using BERT + behavioral embeddings; deployed via Flask & Docker</li>
+            <li>Achieved 4.0 GPA / 4.0</li>
+        </ul>
+    </div>
+</div>
+
+<div id="work1" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
+    <div class="bg-gray-900 text-white p-8 rounded-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh]">
+        <button onclick="closeModal('work1')" class="absolute top-4 right-4 text-orange-500 font-bold text-2xl">X</button>
+        <h2 class="text-3xl font-bold mb-4">Data Scientist</h2>
+        <p class="italic mb-4">Fractal Analytics • 2021 - 2023</p>
+        <p class="mb-4">
+            <span class="font-bold text-orange-500">Overview:</span>
+            Worked as a Data Scientist on client-facing projects for Unilever and Citibank. Delivered actionable insights through predictive modeling, ML pipelines, KPI analysis, and automation of large-scale datasets.
+        </p>
+        <p class="mb-2"><span class="font-bold text-orange-500">Tech Stack:</span></p>
+        <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Python, PySpark, Azure Databricks, Azure Data Factory, SQL Server, XGBoost, Decision Trees, MLflow, Statsmodels, Facebook Prophet</li>
+        </ul>
+        <div class="space-y-4">
+            <div>
+                <p class="font-bold text-orange-500 mb-1">Unilever – EDDGiE Project (Jul 2021 – Jul 2023)</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Built a framework to improve in-store execution by identifying top drivers of shelf performance and measuring sales uplift</li>
+                    <li>Conducted KPI modeling on TRAX shelf image data (on-shelf availability, share of shelf, assortment, product position)</li>
+                    <li>Designed A/B testing with compliance scoring across control/test stores → 40% uplift in sales</li>
+                    <li>Automated ETL pipelines processing 100M+ records using PySpark & Azure Data Factory</li>
+                    <li>Developed self-serve dashboards for executives to track compliance and performance in real-time</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-orange-500 mb-1">Citibank – Customer360 Platform (Aug 2021 – Jul 2023)</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Developed real-time customer insights modules to improve retention and engagement</li>
+                    <li>Customer Journey: Funnel analysis using PySpark to identify drop-offs in onboarding and transaction flows</li>
+                    <li>Top Drivers Analysis: Decision Trees & XGBoost for KPI prioritization</li>
+                    <li>Alerts: Real-time anomaly/change-point detection with Prophet, statsmodels, and ruptures</li>
+                    <li><span class="font-bold">Award:</span> Star Award – Good Samaritan (Aug 2022) for outstanding impact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="work2" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
+    <div class="bg-gray-900 text-white p-8 rounded-lg max-w-2xl w-full relative overflow-y-auto max-h-[90vh]">
+        <button onclick="closeModal('work2')" class="absolute top-4 right-4 text-orange-500 font-bold text-2xl">X</button>
+        <h2 class="text-3xl font-bold mb-4">Graduate Assistant</h2>
+        <p class="italic mb-4">University of South Florida • 2024 - 2025</p>
+        <p class="mb-4">
+            <span class="font-bold text-orange-500">Overview:</span>
+            Served as a Graduate Assistant supporting teaching and research in Big Data, AI, and text mining. Assisted faculty and students in course delivery, assignments, and project development.
+        </p>
+        <p class="mb-2"><span class="font-bold text-orange-500">Tech Stack:</span></p>
+        <ul class="list-disc list-inside space-y-1 mb-4">
+            <li>Python, PySpark, Hadoop, Spark, Docker, Sentence-BERT, TF-IDF, HTML, CSS, Chart.js, .NET (MVC)</li>
+        </ul>
+        <p class="mb-2"><span class="font-bold text-orange-500">Key Contributions:</span></p>
+        <ul class="list-disc list-inside space-y-1">
+            <li>Built an automated grading system for open-ended student answers using NLP (TF-IDF, SBERT, cosine similarity)</li>
+            <li>Implemented text preprocessing (tokenization, lemmatization, stop word removal) to improve grading reliability</li>
+            <li>Conceptualized hands-on exercises to teach 300+ students Big Data and Application Development for Analytics</li>
+            <li>Introduced new tools like MVC Core Singleton Service and Azure Network Watcher to enhance student learning</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    function openModal(id){
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('flex');
+    }
+    function closeModal(id){
+        document.getElementById(id).classList.add('hidden');
+        document.getElementById(id).classList.remove('flex');
+    }
+</script>
+
+<!-- SKILLS -->
+<section id="skills" class="bg-neutral-800 px-4 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto text-white">
+        <h2 class="text-3xl font-bold mb-6 text-center">My Skills</h2>
+        <div class="h-1 w-24 mx-auto bg-orange-500 mb-12 rounded"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+
+            <!-- Programming & Data Manipulation -->
+            <div>
+                <h3 class="font-bold text-xl mb-4 text-orange-500">Programming & Data Manipulation</h3>
+                <ul class="list-none space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Python:</strong> PySpark, Pandas, NumPy, Scikit-learn, TensorFlow, Keras</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">SQL:</strong> Azure SQL Server, MySQL, PostgreSQL, Cassandra</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Languages:</strong> R, C#, C++</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Machine Learning & AI -->
+            <div>
+                <h3 class="font-bold text-xl mb-4 text-orange-500">Machine Learning & AI</h3>
+                <ul class="list-none space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Predictive Modeling:</strong> XGBoost, Random Forest, Regression</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">NLP:</strong> BERT, Sentence-BERT, TF-IDF, LLMs, RAG Systems (LangChain, FAISS)</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Other:</strong> Time Series Forecasting, Anomaly Detection, Recommender Systems</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Cloud & Big Data -->
+            <div>
+                <h3 class="font-bold text-xl mb-4 text-orange-500">Cloud & Big Data</h3>
+                <ul class="list-none space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Azure:</strong> Databricks, Data Factory, Azure ML, Azure Repos, ADLS</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Big Data:</strong> PySpark, Hadoop, Spark, Snowflake</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Deployment:</strong> Docker, Flask, FastAPI, Streamlit, Heroku</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Data Visualization & BI -->
+            <div>
+                <h3 class="font-bold text-xl mb-4 text-orange-500">Data Visualization & BI</h3>
+                <ul class="list-none space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">BI Tools:</strong> Power BI, Tableau, Looker Studio</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Libraries:</strong> Matplotlib, Seaborn, Chart.js</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Analytics & Statistical Skills -->
+            <div class="md:col-span-2">
+                <h3 class="font-bold text-xl mb-4 text-orange-500">Analytics & Statistical Skills</h3>
+                <ul class="list-none space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Methodologies:</strong> A/B Testing, Causal Inference, Statistical Modeling</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span><strong class="font-semibold">Analytics:</strong> Funnel Analysis, KPI Design, Time Series Forecasting, Anomaly Detection</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Portfolio -->
+<section id="portfolio" class="bg-white px-4 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Projects</h2>
+        <div class="h-1 w-24 mx-auto bg-orange-500 mb-12 rounded"></div>
+
+        <div id="slider-container" class="relative">
+            <div id="projects-slider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar space-x-4 pb-4">
+                
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Coupon Acceptance Prediction</h3>
+                        <p class="text-sm text-gray-400 mb-4">Predicted coupon acceptance based on driving behavior and contextual factors.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Predictive Modeling</p>
+                            <p class="text-xs">Python, Scikit-learn, Supervised Learning</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">IMDB Sentiment Analysis</h3>
+                        <p class="text-sm text-gray-400 mb-4">Classified movie reviews using text mining and machine learning models.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Natural Language Processing</p>
+                            <p class="text-xs">PySpark, Text Mining, TF-IDF, Logistic Regression</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">MNIST Image Classification</h3>
+                        <p class="text-sm text-gray-400 mb-4">Classified handwritten digits using a Convolutional Neural Network (CNN).</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Computer Vision</p>
+                            <p class="text-xs">Python, TensorFlow/Keras, CNN</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Car Resale Marketplace</h3>
+                        <p class="text-sm text-gray-400 mb-4">Built ML models for price prediction and an item-item recommender system.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Predictive Modeling / Recommender Systems</p>
+                            <p class="text-xs">Python, Scikit-learn, Stacking Regressor, Streamlit</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Automated Grading System (NLP)</h3>
+                        <p class="text-sm text-gray-400 mb-4">An automated grading system for student answers using NLP and text mining.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Natural Language Processing</p>
+                            <p class="text-xs">Python, PySpark, SBERT, TF-IDF, Docker</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Hybrid Coding Recommender</h3>
+                        <p class="text-sm text-gray-400 mb-4">A hybrid recommender using NLP and sequence learning to suggest coding challenges.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Natural Language Processing</p>
+                            <p class="text-xs">Python, BERT, RNN, Recommender Systems</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Retail Analytics – Unilever</h3>
+                        <p class="text-sm text-gray-400 mb-4">Optimized in-store sales with KPI modeling and an A/B testing framework.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Business Intelligence & Analytics</p>
+                            <p class="text-xs">PySpark, Azure Data Factory, Power BI, A/B Testing, ETL</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Customer360 – Citibank</h3>
+                        <p class="text-sm text-gray-400 mb-4">Developed real-time customer insight modules using predictive analytics.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Predictive Modeling & Cloud Computing</p>
+                            <p class="text-xs">PySpark, XGBoost, Azure Databricks, SQL, End-to-End</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">Azure Insurance Hackathon</h3>
+                        <p class="text-sm text-gray-400 mb-4">Built an end-to-end solution for insurance cross-selling on Azure.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Cloud Computing & Business Intelligence</p>
+                            <p class="text-xs">Azure, MLflow, ETL Pipelines</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">BudgetPulse Web Application</h3>
+                        <p class="text-sm text-gray-400 mb-4">A full-stack financial management platform with forecasting capabilities.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Full-Stack Development</p>
+                            <p class="text-xs">C# .NET (MVC), PostgreSQL, AWS, Azure, Full-Stack</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-project-link" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4">
+                    <div class="bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300">
+                        <h3 class="font-bold text-xl mb-2">RAG-Driven News Q&A Chatbot</h3>
+                        <p class="text-sm text-gray-400 mb-4">A low-latency RAG system with GPT-4 for real-time news retrieval and Q&A.</p>
+                        <div class="bg-gray-700 p-3 rounded-md">
+                            <p class="text-sm font-semibold mb-1 text-orange-400">Generative AI</p>
+                            <p class="text-xs">Python, GPT-4, LangChain, FAISS, Docker, FastAPI</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-8 px-4">
+            <button id="scroll-left" class="hidden md:block bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <div id="slider-dots" class="flex-1 flex justify-center space-x-2">
+                </div>
+            <button id="scroll-right" class="hidden md:block bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Custom utility for hiding scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.getElementById('projects-slider');
+        const dotsContainer = document.getElementById('slider-dots');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+        const totalProjects = slider.children.length;
+
+        function getProjectsPerView() {
+            if (window.innerWidth >= 1024) return 4;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+
+        function updateDots() {
+            const projectsPerView = getProjectsPerView();
+            const totalPages = Math.ceil(totalProjects / projectsPerView);
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('w-4', 'h-4', 'rounded-full', 'bg-gray-400', 'cursor-pointer', 'transition-colors', 'duration-300');
+                dot.dataset.index = i;
+                dotsContainer.appendChild(dot);
+            }
+            updateActiveDot();
+        }
+
+        function updateActiveDot() {
+            const projectsPerView = getProjectsPerView();
+            const cardWidth = slider.querySelector('a').offsetWidth + 16;
+            const currentScroll = slider.scrollLeft;
+            
+            const activeIndex = Math.round(currentScroll / (cardWidth * projectsPerView));
+            
+            const dots = dotsContainer.querySelectorAll('div');
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.add('bg-orange-500');
+                    dot.classList.remove('bg-gray-400');
+                } else {
+                    dot.classList.remove('bg-orange-500');
+                    dot.classList.add('bg-gray-400');
+                }
+            });
+        }
+
+        function scrollToSlide(direction) {
+            const projectsPerView = getProjectsPerView();
+            const cardWidth = slider.querySelector('a').offsetWidth + 16; // Project card width + space
+            const currentScroll = slider.scrollLeft;
+            
+            let targetScroll = 0;
+            if (direction === 'right') {
+                targetScroll = currentScroll + (cardWidth * projectsPerView);
+            } else {
+                targetScroll = currentScroll - (cardWidth * projectsPerView);
+            }
+            
+            slider.scroll({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // Event Listeners
+        scrollLeftBtn.addEventListener('click', () => scrollToSlide('left'));
+        scrollRightBtn.addEventListener('click', () => scrollToSlide('right'));
+        slider.addEventListener('scroll', updateActiveDot);
+        dotsContainer.addEventListener('click', (e) => {
+            const clickedDot = e.target.closest('div');
+            if (clickedDot) {
+                const index = parseInt(clickedDot.dataset.index);
+                const projectsPerView = getProjectsPerView();
+                const cardWidth = slider.querySelector('a').offsetWidth + 16;
+                slider.scroll({
+                    left: index * cardWidth * projectsPerView,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        // Initial setup and resize handler
+        updateDots();
+        window.addEventListener('resize', () => {
+            updateDots();
+            updateActiveDot();
+        });
+    });
+</script>
+
+
+<!-- Awards & Certifications -->
+<section id="certifications" class="bg-neutral-100 text-black px-4 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Awards & Certifications</h2>
+        <div class="h-1 w-24 mx-auto bg-orange-500 mb-12 rounded"></div>
+
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Awards</h3>
+            <ul class="list-disc pl-5 text-lg text-gray-700 space-y-2">
+                <li><strong class="font-bold">Fractal Star Award</strong>: A recognition of outstanding performance and contribution at Fractal.</li>
+                <li><strong class="font-bold">Merit-cum-Means Scholarship</strong>: Awarded for academic excellence at IIT Indore.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Certifications</h3>
+            <div id="slider-container-certs" class="relative">
+                <div id="certifications-slider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar space-x-4 pb-4">
+
+                    <a href="https://learn.microsoft.com/en-us/users/harshasaijagu-6698/credentials/92ca706ba1d1ca54" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Microsoft Certified: Azure Data Scientist Associate</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Microsoft · Jun 2025</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/harshasai/overlay/1748026458519/single-media-viewer/?profileId=ACoAACVBCiAB2YjXWHiT7F0q9fDEi13b_a3kOvQ" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Fractal Certified Data Scientist</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Fractal · Sep 2021</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://www.mygreatlearning.com/certificate/NFCZLRVE" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Program in Data Science, Analytics and Data Engineering</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Great Learning · Sep 2021</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://courses.analyticsvidhya.com/certificates/tvjt6qbjrb" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Time Series Forecasting using Python- V2</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Analytics Vidhya · Aug 2022</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+                    
+                    <a href="https://courses.analyticsvidhya.com/certificates/bseiouxntw" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Advanced Python Programming and Software Engineering Fundamentals</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Analytics Vidhya · Jul 2022</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+                    
+                    <a href="https://www.credential.net/80994d77-6c26-4779-9eb0-bb7744703c98" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Fractal Certified SQL Developer Professional</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Fractal · Dec 2022</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://www.coursera.org/account/accomplishments/verify/NTYD74W7N8KD" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Statistical Inference</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Coursera · May 2023</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/learning/certificates/006d9f8466fe0bb9ff4858c86b90deaaf0e859705b5403c127aa8d3b6772a963" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Learning Docker</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by LinkedIn · Sep 2024</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/learning/certificates/4b5f390aaa05dc669cdfbe98fd31c20367ddfe053e3bd6aafb753ca9b92cac46" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Git Essential Training</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by LinkedIn · Aug 2024</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+                    
+                    <a href="https://courses.analyticsvidhya.com/certificates/p9hymeyevl" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Storytelling using PowerBI</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Analytics Vidhya · Jul 2022</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+                    
+                    <a href="https://www.coursera.org/account/accomplishments/verify/5PJTPARQSTAH" target="_blank" class="flex-shrink-0 snap-start w-full sm:w-1/2 lg:w-1/4 bg-neutral-800 text-white p-6 rounded-lg shadow-md h-full transform hover:scale-105 transition-transform duration-300 min-h-[15rem]">
+                        <h4 class="font-bold text-xl mb-2">Marketing Analytics Foundation</h4>
+                        <p class="text-sm text-gray-400 mb-2">Issued by Meta · Sep 2022</p>
+                        <span class="text-orange-400 text-sm font-semibold hover:underline">Show credential</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center mt-8 px-4">
+                <button id="scroll-left-certs" class="hidden md:block bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <div id="slider-dots-certs" class="flex-1 flex justify-center space-x-2">
+                    </div>
+                <button id="scroll-right-certs" class="hidden md:block bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Custom utility for hiding scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Certification Slider Logic
+        const sliderCerts = document.getElementById('certifications-slider');
+        const dotsContainerCerts = document.getElementById('slider-dots-certs');
+        const scrollLeftBtnCerts = document.getElementById('scroll-left-certs');
+        const scrollRightBtnCerts = document.getElementById('scroll-right-certs');
+        const totalCerts = sliderCerts.children.length;
+
+        function getCertsPerView() {
+            if (window.innerWidth >= 1024) return 4;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+
+        function updateDotsCerts() {
+            const certsPerView = getCertsPerView();
+            const totalPages = Math.ceil(totalCerts / certsPerView);
+            dotsContainerCerts.innerHTML = '';
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('w-4', 'h-4', 'rounded-full', 'bg-gray-400', 'cursor-pointer', 'transition-colors', 'duration-300');
+                dot.dataset.index = i;
+                dotsContainerCerts.appendChild(dot);
+            }
+            updateActiveDotCerts();
+        }
+
+        function updateActiveDotCerts() {
+            const certsPerView = getCertsPerView();
+            const cardWidth = sliderCerts.querySelector('.flex-shrink-0').offsetWidth + 16; // 16px for space-x-4
+            const currentScroll = sliderCerts.scrollLeft;
+            
+            const activeIndex = Math.round(currentScroll / (cardWidth * certsPerView));
+            
+            const dots = dotsContainerCerts.querySelectorAll('div');
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.add('bg-orange-500');
+                    dot.classList.remove('bg-gray-400');
+                } else {
+                    dot.classList.remove('bg-orange-500');
+                    dot.classList.add('bg-gray-400');
+                }
+            });
+        }
+
+        function scrollToSlideCerts(direction) {
+            const certsPerView = getCertsPerView();
+            const cardElement = sliderCerts.querySelector('.flex-shrink-0');
+            if (!cardElement) return;
+
+            const cardWidth = cardElement.offsetWidth + 16; // 16px for space-x-4
+            const currentScroll = sliderCerts.scrollLeft;
+            
+            let targetScroll = 0;
+            if (direction === 'right') {
+                targetScroll = currentScroll + (cardWidth * certsPerView);
+            } else {
+                targetScroll = currentScroll - (cardWidth * certsPerView);
+            }
+            
+            sliderCerts.scroll({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // Event Listeners for Certifications
+        scrollLeftBtnCerts.addEventListener('click', () => scrollToSlideCerts('left'));
+        scrollRightBtnCerts.addEventListener('click', () => scrollToSlideCerts('right'));
+        sliderCerts.addEventListener('scroll', updateActiveDotCerts);
+        
+        dotsContainerCerts.addEventListener('click', (e) => {
+            const clickedDot = e.target.closest('div');
+            if (clickedDot) {
+                const index = parseInt(clickedDot.dataset.index);
+                const certsPerView = getCertsPerView();
+                const cardWidth = sliderCerts.querySelector('.flex-shrink-0').offsetWidth + 16;
+                sliderCerts.scroll({
+                    left: index * cardWidth * certsPerView,
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        // Initial setup and resize handler for Certifications
+        updateDotsCerts();
+        window.addEventListener('resize', () => {
+            updateDotsCerts();
+            updateActiveDotCerts();
+        });
+    });
+</script>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="bg-neutral-800 px-6 py-16 md:py-24">
+    <div class="max-w-screen-lg mx-auto text-white">
+        <!-- Heading -->
+        <h2 class="text-3xl font-bold text-center mb-2">Testimonials</h2>
+        <div class="h-1 w-24 bg-orange-500 mx-auto mb-12"></div>
+
+        <!-- Testimonial Wrapper -->
+        <div class="relative overflow-hidden">
+            <div id="testimonialWrapper" class="flex transition-transform duration-700 ease-in-out">
+                <!-- Testimonial 1 -->
+                <div class="flex-shrink-0 w-full p-6 bg-gray-700 rounded-lg">
+                    <p class="italic">Harsha is a top student and proficient as my Graduate Assistant. He consistently meets deadlines with well-organized work and introduced new technologies to help students. Students greatly appreciate these efforts, reflecting his leadership qualities.</p>
+                    <p class="mt-4 font-bold text-right">-- Manish Agrawal, Professor @ USF</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="flex-shrink-0 w-full p-6 bg-gray-700 rounded-lg">
+                    <p class="italic">Harsha is an extremely detail-oriented and hardworking professional. He breaks down problems and builds consensus, seeks feedback, and elevates team performance. It was an absolute pleasure working with him!</p>
+                    <p class="mt-4 font-bold text-right">-- Arnav Ghosh, Senior Data Scientist @ Fractal</p>
+                </div>
+
+                <!-- Add more testimonials here if needed -->
+            </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="flex justify-center gap-3 mt-6 items-center">
+            <button class="dot w-3 h-3 rounded-full bg-gray-400 transition-all duration-500" onclick="showTestimonial(0)"></button>
+            <button class="dot w-3 h-3 rounded-full bg-gray-400 transition-all duration-500" onclick="showTestimonial(1)"></button>
+            <!-- Add more dots if more testimonials -->
+        </div>
+    </div>
+</section>
+
+<!-- JS for Carousel -->
+<script>
+let currentIndex = 0;
+const wrapper = document.getElementById('testimonialWrapper');
+const dots = document.querySelectorAll('.dot');
+const total = wrapper.children.length;
+
+function showTestimonial(index){
+    wrapper.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((dot, i)=>{
+        if(i === index){
+            dot.style.transform = "scale(1.6)";
+            dot.classList.remove('bg-gray-400');
+            dot.classList.add('bg-orange-500');
+        } else {
+            dot.style.transform = "scale(1)";
+            dot.classList.remove('bg-orange-500');
+            dot.classList.add('bg-gray-400');
+        }
+    });
+    currentIndex = index;
+}
+
+// Auto-slide every 6 seconds
+setInterval(() => {
+    let nextIndex = (currentIndex + 1) % total;
+    showTestimonial(nextIndex);
+}, 6000);
+
+// Initialize first dot
+showTestimonial(0);
+</script>
+
+
+
+
+
+<!-- GET IN TOUCH -->
+<section id="contact" class="bg-neutral-100 text-black px-4 py-16 md:py-24">
+  <div class="max-w-screen-lg mx-auto">
+    <h2 class="text-3xl font-bold mb-2 text-center">Get in Touch</h2>
+    <div class="h-1 w-24 bg-orange-500 mx-auto mb-12"></div> <!-- Orange line -->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Contact Form -->
+      <form class="flex flex-col gap-4" method="POST">
+        <input type="text" name="name" placeholder="Name" class="p-2 border rounded-md" required>
+        <input type="email" name="email" placeholder="Email" class="p-2 border rounded-md" required>
+        <textarea name="message" rows="6" placeholder="Message" class="p-2 border rounded-md" required></textarea>
+        <button type="submit" class="px-4 py-2 border-2 border-orange-600 rounded-full hover:bg-orange-600 hover:text-white transition">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="space-y-4 pl-4">
+        <p>You can reach me at:</p>
+
+        <!-- Email -->
+        <p class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 13.065L0 6V4l12 7.065L24 4v2l-12 7.065z"/>
+            <path d="M0 6v14h24V6l-12 7.065L0 6z"/>
+          </svg>
+          <a href="mailto:harshasaijagu@gmail.com" class="hover:underline">harshasaijagu@gmail.com</a>
+        </p>
+
+        <!-- LinkedIn -->
+        <p class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.238-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.762-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.867 0-2.152 1.457-2.152 2.965v5.704h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.562 2.838-1.562 3.034 0 3.596 1.996 3.596 4.59v5.605z"/>
+          </svg>
+          <a href="https://www.linkedin.com/in/harshasai/" target="_blank" class="hover:underline">harshasai</a>
+        </p>
+
+        <!-- GitHub -->
+        <p class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.095 3.292 9.403 7.865 10.937.575.105.785-.25.785-.557 0-.276-.01-1.007-.015-1.976-3.198.695-3.872-1.54-3.872-1.54-.523-1.327-1.278-1.68-1.278-1.68-1.043-.713.079-.699.079-.699 1.152.082 1.757 1.183 1.757 1.183 1.026 1.758 2.693 1.25 3.35.956.104-.743.402-1.25.732-1.538-2.552-.29-5.235-1.276-5.235-5.678 0-1.255.449-2.282 1.184-3.086-.119-.29-.513-1.457.112-3.037 0 0 .964-.308 3.16 1.177a11.03 11.03 0 012.878-.388c.976.005 1.96.132 2.878.388 2.194-1.485 3.156-1.177 3.156-1.177.627 1.58.233 2.747.114 3.037.737.804 1.182 1.831 1.182 3.086 0 4.412-2.688 5.385-5.249 5.669.414.355.782 1.056.782 2.13 0 1.539-.014 2.778-.014 3.154 0 .309.208.668.79.555C20.713 21.4 24 17.094 24 12c0-6.352-5.148-11.5-12-11.5z"/>
+          </svg>
+          <a href="https://github.com/harshasaijagu" target="_blank" class="hover:underline">harshasaijagu</a>
+        </p>
+
+        <!-- Instagram -->
+        <p class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5zm0 1.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm5-1.75a1 1 0 110 2 1 1 0 010-2z"/>
+          </svg>
+          <a href="https://www.instagram.com/harsha__sai/" target="_blank" class="hover:underline">@harsha__sai</a>
+        </p>
+
+        <!-- Location -->
+        <p class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+          </svg>
+          <a href="https://www.google.com/maps/place/Tampa,+FL" target="_blank" class="hover:underline">Tampa, FL, USA</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('border-glow');
+                } else {
+                    // This will reset the animation when the element is no longer in view
+                    entry.target.classList.remove('border-glow');
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the element is visible
+        });
+
+        timelineItems.forEach(item => {
+            observer.observe(item);
+        });
+    });
+</script>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-neutral-900 text-white text-center py-6">
+    <p>&copy; 2025 Harsha Sai Jagu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
